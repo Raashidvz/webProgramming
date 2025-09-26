@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 45%;
+    
+    
+    }
+    th, td {
+      border: 1px solid rgb(41, 36, 36);
+      padding: 12px;
+      text-align: left;
+       
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+
+  <form name="Sform">
+    <table name="tbl1" >
+      <tr>
+        <th>FIRST NAME</th>
+        <td><input type="text" name="fname" required>(max 30 characters)</td>
+      </tr>
+      <tr>
+        <th>LAST NAME</th>
+        <td><input type="text" name="lname" required>(max 30 characters)</td>
+      </tr>
+      <tr>
+        <th>DATE OF BIRTH</th>
+        <td><input type="date" name="dob" required></td>
+      </tr>
+      <tr>
+        <th>EMAIL ID</th>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <th>MOBILE NO</th>
+        <td><input type="number" name="number">(10 digits)</td>
+      </tr>
+      <tr>
+        <th>GENDER</th>
+        <td>
+          <input type="radio" name="gen" value="male"> Male
+          <input type="radio" name="gen" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <th>ADDRESS</th>
+        <td><textarea rows="4" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <th>CITY</th>
+        <td><input type="text" name="city">(max 30 characters)</td>
+      </tr>
+      <tr>
+        <th>PINCODE</th>
+        <td><input type="number" name="pin">(6 digits)</td>
+      </tr>
+      <tr>
+        <th>STATE</th>
+        <td><input type="text" name="state">(max 30 characters)</td>
+      </tr>
+      <tr>
+        <th>COUNTRY</th>
+        <td><input type="text" name="country"></td>
+      </tr>
+      <tr>
+        <th>HOBBIES</th>
+        <td>
+          <input type="checkbox" name="hobs" value="Drawing"> Drawing
+          <input type="checkbox" name="hobs" value="Singing"> Singing
+          <input type="checkbox" name="hobs" value="Dancing"> sketching
+          <input type="checkbox" name="hobs" value="Dancing"> Dancing
+          <input type="checkbox">Others <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <th>QUALIFICATION</th>
+        <td>
+          <!-- inside table -->
+           <form></form>
+          <table border="0.5px"  width="100%" >
+            <tr>
+              <th>SL.No</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+               <th>1</th>
+               <th>Class X</th>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+            </tr>
+            <tr>
+               <th>2</th>
+               <th>Class XI</th>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+            </tr>
+            <tr>
+               <th>3</th>
+               <th>Graduation</th>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+            </tr>
+            <tr>
+               <th>4</th>
+               <th>Masters</th>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+            </tr>
+          </table>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10 char max)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(upto 2 decimal)
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <th>Courses Applied for</th>
+        <td>
+          <input type="radio" name="course" value="mca"> MCA
+          <input type="radio" name="course" value="mtech"> M.Tech
+          <input type="radio" name="course" value="msc"> M.Sc
+          <input type="radio" name="course" value="phd"> Ph.D
+        </td>
+      </tr>
+      <tr>
+        <th>PASSWORD</th>
+        <td><input type="password" name="PSWD" required>(max 30 characters)</td>
+      </tr>
+      <tr>
+        <th>Upload your file</th>
+        <td><input type="file"></td>
+      </tr>
+      <tr>
+        <th>DATE OF TC</th>
+        <td><input type="date" name="dobtc" required></td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
