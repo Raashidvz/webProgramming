@@ -1,0 +1,17 @@
+.p1{
+    color: rgb(10, 73, 145);
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+.p2{
+    color: rgb(145, 10, 78);
+    background-color: rgb(196, 221, 172);
+}
+.p3{
+    color: rgb(10, 141, 173);
+    background-color: rgb(252, 162, 129);
+}
+.p4{
+    color: rgb(255, 255, 255);
+    background-color: cadetblue;
+}

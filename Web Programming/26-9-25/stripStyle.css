@@ -1,0 +1,27 @@
+#striptable{
+    width: 100%;
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+
+#striptable th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    color: white;
+    background-color: #b22222;
+    border: 1px solid grey;
+}
+
+#striptable td{
+    padding: 8px;
+    border: 1px solid grey;
+}
+
+#striptable tr:hover{
+    background-color: burlywood;
+}
+
+#striptable tr:nth-child(even){
+    background-color: #f2f2f2;
+}

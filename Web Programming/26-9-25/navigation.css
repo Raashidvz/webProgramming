@@ -1,0 +1,26 @@
+a{
+    text-decoration: none;
+    padding: 6px 8px 6px 16px;
+    color: white;
+}
+
+.sidenav{
+    height: 100%;
+    width: 160px;
+    padding-top: 20px;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a:hover{
+    color: red;
+}
+
+.main{
+    margin-left: 160px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 2000px;
+}
