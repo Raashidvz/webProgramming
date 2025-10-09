@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+</head>
+<style>
+    img{
+        width: 220px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div>
+        <button id="turnON">Turn ON the light</button>
+        <img id="myImage" src="images/bulbOFF.jpg" alt="">
+        <button id="turnOFF">Turn OFF the light</button>
+    </div>
+</body>
+<script>
+    document.getElementById("turnON").addEventListener("click",lightON);
+    document.getElementById("turnOFF").addEventListener("click",lightOFF);
+    function lightON(){
+        myImage.src = "images/bulbON.jpg";
+    }
+    function lightOFF(){
+        myImage.src = "images/bulbOFF.jpg";
+    }
+</script>
+</html>

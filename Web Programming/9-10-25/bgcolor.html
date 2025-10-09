@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGCOLOR</title>
+</head>
+
+<body>
+    <button id="color2">Click Me</button>
+    <!-- <button id="color2" onclick="changeRed()" ondblclick="changeGreen()">Click Me</button> -->
+</body>
+<script>
+    document.getElementById("color2").addEventListener("click",changeRed);
+    document.getElementById("color2").addEventListener("dblclick",changeGreen);
+    function changeRed(){
+        document.body.style.backgroundColor="red";
+    }
+    function changeGreen(){
+        document.body.style.backgroundColor="green";
+    }
+</script>
+</html>
