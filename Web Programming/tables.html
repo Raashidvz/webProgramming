@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr:nth-child(odd){
+            background-color: white;
+        }
+        tr:nth-child(even){
+            background-color: lightgrey;
+        }
+        th{
+            color: white;
+            background-color: blue;
+        }
+        table{
+            color: black;
+            text-align: center;
+            border-color: black;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <center>
+        <h1>College Fees Structure</h1>
+        <table border="2px" cellpadding=10>
+            <caption>Academic Year 2025-2026</caption>
+            <tr>
+                <th>Program Level</th>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Fees (per year in rupees)</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Undergraduate</td>
+                <td>BTech</td>
+                <td>4 years</td>
+                <td>60000</td>
+            </tr>
+            <tr>
+                <td>Bsc</td>
+                <td>3 years</td>
+                <td>35000</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Postgraduate</td>
+                <td>MTech</td>
+                <td>2 years</td>
+                <td>80000</td>
+            </tr>
+            <tr>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>65000</td>
+            </tr>
+            <!-- <tr>
+                <td>Msc</td>
+                <td>2 years</td>
+                <td>60000</td>
+            </tr> -->
+        </table>
+    </center>    
+</body>
+</html>
