@@ -1,0 +1,59 @@
+<?php
+    // if($_SERVER["REQUEST_METHOD"]=="GET"){
+        // sesssion_start();
+        // $_SESSION["username"]="";
+
+        // $conn = mysqli_connect("localhost","root","","raashid");
+        // if(!$conn){
+        //     die("Connection Failed : ".mysqli_connect_error());
+        // }
+    // }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" method="post">
+        Username <input type="text" name="username" required><br>
+        Password <input type="password" name="pswd" required><br>
+        <button type="submit" name="login">Login</button>
+    </form>
+
+    <?php
+        session_start();
+        $conn = mysqli_connect("localhost","root","","raashid");
+        if(!$conn){
+            die("Connection Failed : ");
+        }else{
+            echo"Connected";
+        }
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+            
+            $username=$_POST["username"];
+            $pswd=$_POST["pswd"];
+
+            $sql="SELECT * FROM users WHERE username='$username' OR pswd='$pswd'";
+            $result=mysqli_query($conn,$sql);
+            $user=mysqli_fetch_assoc($result);
+            if($user){
+                if($username == $user['username'] && $pswd == $user['pswd']){
+                    $_SESSION["username"]=$username;
+                    $s_v=$_SESSION["username"];
+                    header("Location:welcome.php");
+                    // echo"$_SESSION["username"]";
+                    echo"$s_v";
+                    echo"<p>$username</p>";
+                }else{
+                    echo"Not match";
+                }
+            }else{
+                echo"No such user";
+            }
+        }
+    ?>
+</body>
+</html>

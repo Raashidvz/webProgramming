@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <style>
+        .question{
+            align-items: left;
+            display: block;
+            width: 100%;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MCQ Questions</h1>
+
+    <div class="question">
+        OOP stands for: <br>
+        Object Oriented Programming<input type="radio" name="q1"><br>
+        Object On Programming<input type="radio" name="q1"><br>
+    </div>
+
+    <div class="question">
+        POP stands for: <br>
+        Problem Oriented Programming<input type="radio" name="q2"> <br>
+        Procedure Oriented Programming<input type="radio" name="q2"> <br>
+    </div>
+
+    <div class="question">
+        Object is an ______ of a class: <br>
+        Instance<input type="radio" name="q3"><br>
+        Structure<input type="radio" name="q3"><br>
+    </div>
+
+    <button type="submit" onclick="validate()">Submit</button>
+</body>
+<script>
+    var answers=[1,2,1];
+    function validate(){
+        for(var q=1;q<answers.length;q++){
+            
+        }
+        var q1=document.getElementsByName("q1");
+        for(var i=0;i<q1.length;i++){
+            if(q1[i].checked){
+
+            }
+        }
+    }
+</script>
+</html>
