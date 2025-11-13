@@ -18,36 +18,54 @@
 
     <div class="question">
         OOP stands for: <br>
-        Object Oriented Programming<input type="radio" name="q1"><br>
-        Object On Programming<input type="radio" name="q1"><br>
+        <input type="radio" name="q1">Object Oriented Programming<br>
+        <input type="radio" name="q1">Object On Programming<br>
     </div>
 
     <div class="question">
         POP stands for: <br>
-        Problem Oriented Programming<input type="radio" name="q2"> <br>
-        Procedure Oriented Programming<input type="radio" name="q2"> <br>
+        <input type="radio" name="q2"> Problem Oriented Programming <br>
+        <input type="radio" name="q2">Procedure Oriented Programming<br>
     </div>
 
     <div class="question">
         Object is an ______ of a class: <br>
-        Instance<input type="radio" name="q3"><br>
-        Structure<input type="radio" name="q3"><br>
+        <input type="radio" name="q3">Instance<br>
+        <input type="radio" name="q3">Structure<br>
     </div>
 
     <button type="submit" onclick="validate()">Submit</button>
+
+    <br><br>
+    Total Marks <h2 id="total"></h2>
 </body>
 <script>
     var answers=[1,2,1];
+    result=0;
     function validate(){
-        for(var q=1;q<answers.length;q++){
-            
-        }
-        var q1=document.getElementsByName("q1");
-        for(var i=0;i<q1.length;i++){
-            if(q1[i].checked){
-
+        for(var q=1;q<answers.length+1;q++){
+            // console.log(q);
+            q2="q"+q;
+            console.log(q2);
+            console.log(answers[q-1]);
+            var q1=document.getElementsByName(q2);
+            // if(q1[answers[q-1]].checked){
+            //     result=reult+1;
+            // }
+            for (let i = 0; i < q1.length; i++) {
+                if (q1[i].checked && answers[q-1]==i+1) {
+                result=result+1;
+                }
             }
         }
+        console.log(result);
+        document.getElementById('total').innerHTML=result;
+        // var q1=document.getElementsByName(q2);
+        // for(var i=0;i<q1.length;i++){
+        //     if(q1[i].checked){
+
+        //     }
+        // }
     }
 </script>
 </html>
