@@ -20,26 +20,26 @@
     }
   </style>
   <script>
-    function nameCheck(){
-        const fname = document.getElementById('fname');
-        if(fname.value.trim()===""){
-            window.alert("First Name Cant be Empty");
-        }
-    }
+    // function nameCheck(){
+    //     const fname = document.getElementById('fname');
+    //     if(fname.value.trim()===""){
+    //         window.alert("First Name Cant be Empty");
+    //     }
+    // }
 
-    function dateCheck(){
-      const dob=document.getElementById('dob');
-      if(dob.value.trim() === ""){
-        window.alert("DOB cant be empty");
-      }
-    }
+    // function dateCheck(){
+    //   const dob=document.getElementById('dob');
+    //   if(dob.value.trim() === ""){
+    //     window.alert("DOB cant be empty");
+    //   }
+    // }
 
-    function numberCheck(){
-      const ph=document.getElementById('ph');
-      if(ph.value.length != 10){
-        window.alert("Enter a valid number");
-      }
-    }
+    // function numberCheck(){
+    //   const ph=document.getElementById('ph');
+    //   if(ph.value.length != 10){
+    //     window.alert("Enter a valid number");
+    //   }
+    // }
 
     function formSubmit(){
       courseCheck= document.getElementsByName('course');
@@ -67,6 +67,11 @@
       if(dob.value.trim() === ""){
         message=message+" DOB";
         isAnySelected=false;
+      }
+
+      const ph=document.getElementById('ph');
+      if(ph.value.trim()===""){
+        message=message+" Phone"
       }
 
       if(!isAnySelected){
